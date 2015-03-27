@@ -53,6 +53,7 @@ public class AdMobAdsAdListener extends AdListener {
         Log.d(AdMobAds.ADMOBADS_LOGTAG, adType + ": ad loaded");
         String event = String.format("javascript:cordova.fireDocumentEvent(admob.events.onAdLoaded, { 'adType': '%s' });", adType);
         admobAds.webView.loadUrl(event);
+        admobAds.adViewLayout.requestLayout();
       }
     });
   }
