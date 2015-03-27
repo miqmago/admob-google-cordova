@@ -112,7 +112,7 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
   //private View adView;
   //private SearchAdView sadView;
   /** if want banner view overlap webview, we will need this layout */
-  private RelativeLayout adViewLayout = null;
+  protected RelativeLayout adViewLayout = null;
   /** The interstitial ad to display to the user. */
   private InterstitialAd interstitialAd;
 
